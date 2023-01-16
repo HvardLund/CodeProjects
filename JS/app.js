@@ -31,7 +31,7 @@ const addElementsToSelect = (list) => {
     }
 }
 
-//Handles the logic when a new laptop is selected, displaying its features
+//Handles the logic when a new laptop is selected, displaying its features and setting one laptop as selected for use with the buy method
 const selectNewLaptop = event => {
     featuresElement.innerHTML=''
     const selectedLaptop = laptops[event.target.selectedIndex]
@@ -50,7 +50,7 @@ const selectNewLaptop = event => {
     priceElement.textContent = selectedLaptop.price
 }
 
-//displaying the features of the first laptops
+//displaying the features of the first laptop upon load. Very similar to the selectNewLaptop method
 const setInitialLaptop = () => {
     const selectedLaptop = laptops[0]
     specs = selectedLaptop.specs
@@ -82,7 +82,7 @@ async function getLaptops() {
     }
 }
 
-//Taking the loan amount as input and adding it to the total bank balanceElement
+//Method that handles logic and constraints when asking for a loan
 const askForLoan = () => {
     if(debt == 0){
         let loanAmount = Number(window.prompt("Type a number", ""))
@@ -108,13 +108,13 @@ const askForLoan = () => {
     )
 }
 
-//Working increases pay amount
+//Method that handles functionality on work button
 const work = () => {
     payAmount+= 100
     payElement.textContent = payAmount
 }
 
-//Function used to handle loan payback calculation used in the moveToBank function
+//Function used to handle loan payback calculation used in the moveToBank function and payLoan function
 const calculatePayback = (factor) => {
     if(debt == 0){return 0}
     if(payAmount*0.1*factor >= debt){
@@ -150,6 +150,7 @@ const payLoan = () => {
     payElement.textContent = payAmount
 }
 
+//Method that handles logic for buying laptop
 const buyLaptop = () => {
     if(saldo>=currentLaptop.price){
         saldo-= currentLaptop.price
