@@ -104,7 +104,7 @@ const askForLoan = () => {
     }
 
     else(
-        alert(`You already have a loan worth ${debt}kr \n You have to repay it before you can get another loan`)
+        alert(`You already owe ${debt}kr.\n You have to repay it before you can get another loan`)
     )
 }
 
@@ -154,6 +154,7 @@ const buyLaptop = () => {
     if(saldo>=currentLaptop.price){
         saldo-= currentLaptop.price
         balanceElement.textContent = saldo
+        alert(`Congratulations! You are now the lucky owner of ${currentLaptop.title}.\nWe do not provide any services post purchase, meaning that if you run into any problems, you're on your own :D`)
     }
     else{
         alert(`You can't aford this laptop, try working harder or get a loan`)
