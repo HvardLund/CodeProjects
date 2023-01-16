@@ -1,0 +1,234 @@
+body {
+    background-color: #222;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #222;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: larger;
+    max-height: fit-content;
+    margin: 0px;
+}
+
+h5 {
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    margin-top: 2px;
+    max-width: 95%;
+    overflow-x: hidden;
+    color: #222;
+    display: list-item;
+}
+
+h5::before{
+    content: '• ';
+    color: orange;
+}
+
+button{
+    height: fit-content;
+    width: fit-content;
+    background-color: orange;
+    border: none;
+    color: white; 
+    font-size: medium; 
+    padding: 10px; 
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 0 4px #555;
+    
+}
+
+img {
+    height: 250px;
+    margin: 20px;
+    max-width: 30%;
+}
+
+div {
+    display: flex;
+    min-width: fit-content;
+    flex-direction: row;
+}
+
+select {
+    background-color: #fff;
+    color: #222;
+    outline: none;
+    border-color: #222;
+    border-width: 2px;
+    height: fit-content;
+    font-size: medium;
+    width: 60%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#bankButton {
+    background-color: #b22;
+}
+
+#workButton {
+    background-color: #2b2;
+}
+
+#repayLoanButton {
+    background-color: orange;
+}
+
+#buyButton {
+    width: 50%;
+}
+
+#container {
+    width: 100%;
+    align-items: center; 
+    justify-content: center;
+}
+
+#cardContainer {
+    width: 100%;
+    height: 320px;
+    align-items: center; 
+    justify-content: center;
+    gap: 5%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+#card {
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 25%;
+    background-color: white;
+    height: 100%;
+    border-radius: 30px;
+    overflow-y: auto;
+}
+
+#buttonContainer {
+    gap: 10px;
+}
+
+#textContainer {
+    align-items: center;
+    gap: 10px;
+}
+
+#debtTextContainer {
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#laptopDisplayCard {
+    align-items: center;
+    justify-content: flex-start;
+    width:85%;
+    background-color: white;
+    height: 300px;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-width: fit-content;
+}
+
+#balance {
+    font-size: 40px;
+    color: orange;
+}
+
+#pay {
+    font-size: 40px;
+    color: #2b2;
+}
+
+#loaned {
+    font-size: 40px;
+    color: orange;
+}
+
+#debt {
+    font-size: 40px;
+    color: #b22;
+}
+
+#payAndLoanContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#features {
+    display: flex;
+    height: 150px;
+    width: 90%;
+    align-items: flex-start;
+    align-self: center;
+    gap:0;
+    flex-direction: column;
+    background-color: rgb(254, 254, 254);
+    padding: 10px;
+    border-style: inset;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 20px;
+}
+
+#laptopInfo {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+
+}
+
+#laptopDescription {
+    height: 60%;
+    margin-top: 0px;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+#buyLaptop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    gap: 10px;
+}
+
+#laptopPrice {
+    font-size: 40px;
+    color: orange;
+}

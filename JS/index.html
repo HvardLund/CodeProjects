@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css" href="app.css">
+    <title>Komputer store</title>
+</head>
+<body>
+    <div id = "container">
+        <h1>KOMPUTER STORE</h1>
+    </div>
+    <div id="cardContainer">
+        <div id="card">
+            <h2>Bank</h2>
+            <div id="textContainer">
+                <h4>Balance: </h4>
+                <h4 id="balance">0</h4>
+                <h4>kr</h4>
+            </div>
+            <div style = 'display: none;' id="debtTextContainer">
+                <h4>Debt: </h4>
+                <h4 id="debt">0</h4>
+                <h4>kr</h4>
+            </div>
+            <Button id="loanButton">Get a loan</button>
+        </div>
+        <div id="card">
+            <h2>Work</h2>
+            <div id="textContainer">
+                    <h4>Pay: </h4>
+                    <h4 id="pay">0</h4>
+                    <h4>kr</h4>
+            </div>
+            <div id="buttonContainer">
+                <button id="bankButton">Bank</button>
+                <button id="workButton">Work</button>
+                <button style="display: none" id="repayLoanButton">Repay loan</button>
+            </div>
+        </div><div id="card">
+            <h2>Laptops</h2>
+            <select sel name = "laptops" id = "laptops">
+            </select>
+            <h3>Features:</h3>
+            <div id="features"></div>
+        </div>
+    </div>
+    <div id="container">
+        <div id = "laptopDisplayCard">
+            <div id = laptopInfo>
+                <h2 id = "laptopName"></h2>
+                <h4 id = "laptopDescription"></h5>
+            </div>
+            <div id="buyLaptop">
+                <div id = "textContainer">
+                    <h4 id = laptopPrice></h4>
+                    <h4>kr</h4>
+                </div>
+                <button id="buyButton"> Buy</button>
+            </div>
+            <img id="laptopImage" alt="LaptopImage">
+        </div>
+    </div>
+    <script src = "app.js" ></script>
+</body>
+</html>
